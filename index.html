@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÁCH GIÁO KHOA LỊCH SỬ 12</title>
+    <link rel="stylesheet" href="first-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+    <header>
+        <div class="image_header"></div>
+    </header>
+
+    <!-- header -->
+    <div class="navi">
+        <div class="left_icon">
+            <table>
+                <th>
+                    <a href="index.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAghJREFUaEPtmLsuRUEUhr8TOlEpdBoSgkbhEqER4gVcGh0dtUovolHQaFXCC7iEQiKh0SAhFCQKhVIn4czJTsjJnj23NY4TM/Watf5v1sz8s3eJOh+lOtdPAqh1B2N2YBTYBj6BBeA8BmwsgD7gDGjKRL8DCuhKGiIGQDtwAbRUiX0DBoFHSQhpgFbgEmjTiHwGBoBXKQhJgOZsn/caxF0DQ4DaVsFDCqAROAVGLBWdAJPAh2W8NkwCQOXYBaYdxewBs9kt5Tj1O1wCYBNY9FSwBSx5zq1MCwVYBtZCBAAqx7pvjhCAOWDHt3DVvBlAbSnn4QswBhwCDc4V8yeow6wOtTrcTsMHoNplnQoWBHu5tSuAzmWlIJzd2gXA5LJSEE5ubQtg67JSENZubQPg6rJSEFZubQLwdVkpCKNbmwBCXFYKotCtiwAkXFYKQuvWOgBJl5WCyHXrPIBx4EiqqnCeifKT/fhnzjyAp4IvKmE9zunugC4TwEP5kaYc9y+Oe6DTBDAMbAD9f4zgBZgHDkwAOt3q/85vDtMVX9FiFZSpTgCO7bNaXKug1AHHpc/CrRbXKui/dcC0KLaXgSlPtFvIVDgBxDay1IFa30KpA6kDGuO8AboNpnpb/knbY4iRyuPsA1PAKtChEai+llaAfQOAVB5nAL8XTeRZphsjcvnw9AkgfA3DMnwBks9fMcK8lLcAAAAASUVORK5CYII="/>
+                    </a>
+                </th>
+                <th>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"/>
+                </th>
+                <th class="mic_icon" onclick="toggleSound()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAz5JREFUaEPtmFmoTlEUx3/Xi5lMCZmH4gHlBSlJRKYUkvKguOWBpEjiRTwgZEh58aBkjAxRRHmgUIYkZMz8YMhYpth/7aN1T9/9vn2G7+rWWXW73z6ttfb67zXtvWpo5FTTyO2nAPC/PVgND/QFZgCj/d934BZwEtgHPMsTdN4AFgMbgKZljDwIzAO+5gEkLwDScwyYEmjUFWAU8COQv162vAAsAbYkNGYrILlMlAeAnsAdoHlCS34CPYBXCeXqsOcBYB2wMqURq4G1KWX/iuUB4BQwMaURF30upBTPB8BLoEtKC94AnVLK5uaB31kMyBoFeYRQASCLBwsPAEUIFSGU5QSKEMrYTIsqVIRQA4TQZ6ClSfTWgL5F9BHQtzQk2bZGsBXwyay/APpWL4XkwCOgt9HQH3hg1jeBwWmsB64Bw4zsAOCeWT8E+mUFcAkYYZSMBc6btR7xy1IC0GNolZEdB5wx64rvhRAP7AQWGqUb3URhecwjd4EmCUHoSakRzFMjp3e1fSdvBzTpyBRCk52bTxgN9wG52tJuPypJgqGUcY+BXkbJeOBsVgDNgPeA/kc0Ezhs1kryq8DAQASX/dDrm+GfC+wxayVwu0qjl5AQks5NwFKjXIk9CLAGqJrsdUAmlQGhm+sBYL7LGxkYUQtfGOzTNJ4fJdWGAujoY9WOTg4Bs0poVQjMASYAQ/wJqlJptCjj9Ya2JBuOAwrViASuG/ChkkdDAUiPRic6FUsaiWg0koW2AYtiCrTeEaI0CQDxngPGxBQrbhUSSceEyqn9wLSYPhWMqSHGiycJAPF3ADTX7BPb4Ikro2t8Ev6qsLkGvwuAFT5MLPttYHis05dVlxSAlHV1XrhQT4d86+L+qK9QAvXcH1J3l+Dq4Bq768TblLDqBqAm+S709NN4INLd2V0fjriuOTLJZmV4TwOzXaXT3SgRpfFAtIFka91Qd33sQpbEgNe+86o6paIsAKIN2/t2r8qh3yH0woXRZjeS3BXrByGydXjyABApVDfWZUw306HA9Jg16hvqB9f99SBp1SoJLk8A8Q3i86Kq7FUVpR5JASAkIQoPhJxSNXmq6YFq2v1PdwGgQY65zCZ/AJOshzEejdbpAAAAAElFTkSuQmCC"/>
+                </th>
+            </table>
+        </div>
+        <div class="topic"></div>
+        <div class="right_icon">
+            <table>
+                <th class="theme-icon" onclick="toggleMenu()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAhNJREFUaEPtmUtKxEAQhr8R3LtRPIKuxMcxVBQ9hoKvYyg+j6Gi6DEU3OkRRDfuBTWRCG3RlX4VZAaS1RCS7vqqq/6/wgwY8Wsw4vHTA3R9gv0J9CdQmIG+hJwEngNbIqEXwLaS5O/M5P9LutUJjANvwIQI6gOYAj49wQ4VwAZwqWR0E7gadoA7YFkBuAdWhhlgEngFxhSAL2AaeM+s+dbXLHpgDzhydnmC3xFlzrl3IJ4xY7EAeAZmnIh2GoBj594LMGsWtbNQKcBiVfsPznp/5VLfkmW1VPXCozVEKYDU/ltgrQmy/r3qBKx5QqqcmvmAT/vXgZsm6Pr3tQOgeUJnAFL7ZYA+QJ8ndAYgtf8UqBvYvc7EKOHzhE4AfNo/X9V/LaHutSAa19wTcpt4HziMlEkps6aekAsgg9qtBrkTRSKl0Zl6Qg6Apv3aqOArNzNPyAFo037Np2TDl3wnFPlASPs1gJDkuu+FVKkIoG3uT50Scr8TigDa5v5UgNzvhGyA0NyfCmDiCSlNLLU/NWDf88WekAJgYUgpBhiVoFiAVO3XNjf3hFgAqf1aA8ZkLcUTguvFAMSOxcHNmgdSPCG4ZgyA6YaAaUJiAEyPvEmpWUmGAMybrgGwEoXgX0zmsucUtYUsBwFMNlE60SQ5bSVkdswKgEl5hnogKGNdP9AD9CdQmIG+hAoTWPx6fwLFKSxc4Acy1YUxuyn9FwAAAABJRU5ErkJggg=="/>
+                </th>
+                <th>
+                    <a href="zoom_page.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAApBJREFUaEPtmctqFUEQhr9DVLLwQaL74EoEycULKgSDUXIxgRDcuNGFxLW4EEVwFfAeFZWoGNAkJASCIvgAKr6ISlSMJTPQDD093V19PBmYs8ypqvm/qjo9VZ0WNf+0aq6fBqDTFWwqsJ0r8MdT3AegD/juaZ+b7QbWgH2eftZucbWQD0Cs+BiI5ABa8aEQSQFSiQ+BSAowCdz37F1fM4l512GcFOA3MAy88lVXYTcCPAK6/heAPEcgRoGnSggR/wQqpwJVBVaBW8CiRexpBcQ48MAS8wRwDjhkfBcNIOKPAj+B48ALYIcRWI7bs8DDwEqIePkdmcJ+AceAZWAX8NqAiAIwxef6BOJloV9DIWzipSWHClUWiCXgYFmLuV5k4ni4JKtngMeW7/YCXyoqITafLDbyW3hm+Xt3BjVgi6sZ5sYKbXMBuOHZRrPAFcNWDgNbQnITgfiRGkDiTQF3gKuAiAr53ATOA5IIl3hnTE0F8sAHgI0Q5YbtfuBdpO8/txQAmuerfRsAdQqVAZoKKBOodm8qoE6hMkBTAUDzItP4JnmRyShxOxslLgd2wzVA5qeOjRKyA9wzRF8ErntCXMqgc3MZr+cdvlHDXMw43QN8rYDYA3y22JwCnpf4rgCDodOoLCmyGcl6t2k4n8xWSHMBD11opoG5wixmW2h2Am+A/piFJr+ZMyFSbGNm27hWSlN86eDpe7X4NruzWbCUcSJiHzYhypb6GeCI8byondjVzrW6VimC1P5iS85/8wj1PD2dZvl6WmaUtIU+Zlcd31IoB+R/Bet/T5xeR7ykAPKc99nZrIXwEa8+hcoSo4XwFd82AE0lQsRHASRq7/aGafaB9ua3OnpTgeoctdei9hXYAiupjDGDSS84AAAAAElFTkSuQmCC"/>
+                    </a>
+                </th>
+                <th>
+                    <a href="https://www.facebook.com/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABBRJREFUaEPtmVnoVVUYxX8aOA+o5QQpmCCGYhGiIIpKBpqhkJoPPpggKoJDKQ44D4VjOBRpivqgoIVFZIoKiqCI4IMjDjiAA6XmGCHktBfsA5vj3uccL/fecwS/l/+fc/c+31p7WHt9+9TgNY8arzl+3hDIewaLMAPjgP5AD+AJcAZYCfyRZXDyJDAQ+AloGQB6BJgAHE8ikheBD4CjQO2UUX4IdAUuhNrlQaCVHVX9zRJXgI+Ae77GeRCYD8xxwPwFTAP22mefAEtiS+sr4LuiENDm/NQB8wWwIwZuGLDdeab/hxeFwN9AcwdMQ+DfGLhmwB3nmZZRu6IQeAQ0cMAI7N0YuKbAP86zc2ZGOhaFwEWgvQNGy+XnlCX0AzA+bwK9gdVA5xgQbeIp5iDbB7wF9AOWAi2cdkOBX/IioLW7AhicRTM9bS4BHwJaei9FJWVUm1NyqdO0Vongpf3dAC07b6QRaANMBfpaFfgPOA3sAbYANwPvHW1AfwO8Hfj9T+B389u8BCuhrn2Ag0nkkwh8ZpOE+kv6xgDbnAYiusbo+vuBTmeBSXa9q0l9YDLQ0wxKd/PbfWsxNEA6L26nzVyIgNyhRilL6OS8bNf5oEAHafpco/9Sk7KGj4A0+HzC9McByHA1SkAlCyD78KCsyO3LfAQkacucZFm8ig+b1rg8jFSkYuEjcMxa2ChpFq/iAjxlnONE4EDFUDsv9hGQ0tR12mTxKmp+y1RUs4CNRj6fVQO8cvgIPI8lz+JV1KWxWTLaD1UNHwEtgU4OiixeRSr0XlWRJ2ziBcDs2CZO8ypqrgNOmr6/mkR8M6AlI+XQkigldln1Cdaxpbw01Cd0kA0wSiQgpcZTYIOdydTTtNQkoU0cvU8kNgPvBBI8BmbY+5whgTZStG9NAbMcUPuyR5qZU+X0JTDCVkQ1rYHTSS2XqVJPoUuptYCuS3xx3RCYDmwtN4M0Aq+aT2QXA6ErkxOW+CH7Ypk5DUQve3Wi2RbZ741L/dGau0QM5SagZHVM8fE1MNNUVvUC2X+1aqV6wa284s1HWtseJFEJAlEyjaZmY5QtFV91NtX+f1sTHA51riSBKKdqg1XAx6UwsDdyXYBrvv7VIBDlVd0gax0vdrK4XR2si/ImEOW/CrR1wGRxu7qpltK9FNWcgSi5DjnJcRRZ3K4MZhNfUZQHgRtAa4eACn/3Fk4/xa8W9czXLpdvZL8Bbu2cxe3KV3UoyhJS0bPQAZPlZm6TleNC7AGdD/ps9G5GWZWH0gcOXckUgoBAqGBS7e2WriE+Y401WZfnQRbKLberS7GkumMn8HnSTOWhQi4eqY2stja1ZDKK3Uap1ht3qw2fGHkTcMHphNaXm5OeDx5BEkUikDbY3t/fEChp2MrY6QV1pbUx45R3XQAAAABJRU5ErkJggg=="/>
+                    </a>
+                    </th>
+            </table>
+            <div class="bang-tuy-chinh" id="themeMenu">
+                <div class="tuy-chinh">
+
+                    <div class="chinh-nen">
+                        <h2>Nền</h2>
+                        <img src="img/sun.png" alt="" id="icon">
+                    </div>
+                    <div class="co-chu">
+                        <h2>Cỡ chữ</h2>
+                        <button>A+</button>
+                        <button>A-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="left-side">
+            <img src="img/bia1.png" alt="">
+        </div>
+        <div class="right-side">
+            <h2>SÁCH GIÁO KHOA: LỊCH SỬ 12</h2>
+            <div class="infor">
+                <div class="tacgia">
+                    <p>TÁC GIẢ</p>
+                    <a href="tacgia.html">
+                        <h2>VŨ DƯƠNG NINH</h2>
+                    </a>
+                </div>
+                <div class="nhaxuatban">
+                   <p>NHÀ XUẤT  BẢN</p>
+                   <a href="https://www.nxbgd.vn/">
+                    <h2>NHÀ XUẤT BẢN GIÁO DỤC VIỆT NAM </h2></a>
+                </div>
+            </div>
+
+            <div class="react-button">
+                <div class="docsach">
+                    <a href="loimodau.html">
+                        <button>
+                            <div class="icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAa1JREFUaEPtmTtKBEEQhr8NPYGJkQi+YwO9gJmBYGKmoCIYCoKhIAhGimIipoKB3kEDD+ArMBAEwTuITmMHs207/ZjuHUdqw6Xqr/rrr6qe6enQ8l+n5fkjBJpWUBT4iwrMAzvAcGRyr8A1cA5caow5YAGYAQYicZ+AbeCi7G9rofsi+GhkENPtRv8xnQjvriAw4SLwmShYLpiuotsU+HcEQjeVar99YNaQ4ArYKmbhIVAas6DBCoQSUPkNAs9Gov3Ae2DyyrwRAs7AAUSEQEwLiQKlFpMWkhbS7ZClED4ncZbAskYrZK2c+lSVS4UjLVRRyZ4oKQqIAu5plkcJOcjkUaJ7TnryTiwvNPJCU6qAbKGmt5D7rPy2eANegBPgzHIh1QdsAIvApC+oxS54C8XEugWmDMdHYCQGzPBxElBX2GMJAuWAUFf/42Vg24CqDxy7wFCODGpgen/giI2hVFM9vuIAOACOI26prbCxK7Iqx3Xg8BeDVT3ksUX64ZeDgAqyBhwZp+kycJos85q72SePJWAT+AD29Gr18QuyyaVAUBJ1jIVAneql8G29Al/nTXYxXFkguQAAAABJRU5ErkJggg=="/>
+                            </div>
+                        <h2>ĐỌC SÁCH</h2>
+                    </button>
+                    </a>
+                </div>
+                <div class="like">
+                    <div class="btns">
+                        <Button onclick="Toggle3()" id="btnh3" class="btn"><i class="fab fa-gratipay"></i></Button>
+                    </div>
+                </div>
+            </div>
+            <div class="tomtat">
+                <input id="ch" type="checkbox">
+                <p>Cuốn sách tổng hợp kiến thức lịch sử thế giới và lịch sử 12, phục vụ cho việc học và thi của các bạn học sinh trung học phổ thông
+                </p>
+                    <div class="content">
+                    <p>
+                        Cuốn sách bao gồm 2 phần:
+                        <br>- PHẦN 1: LỊCH SỬ THẾ GIỚI HIỆN ĐẠI TỪ NĂM 1945 ĐẾN NĂM 2000
+                        <br>- PHẦN 2: LỊCH SỬ VIỆT NAM TỪ NĂM 1919 ĐẾN NĂM 2000
+                        <br>
+                        <br> Phần một của cuốn sách viết về những vấn đề chung của lịch sử thế giới những năm 1945 - 2000, sự hình thành trật tự thế giới mới sau chiến tranh thế giới thứ hai
+                        <br>Phần hai viết về lịch sử Việt Nam thông qua các giai đoạn
+                        <br>- Việt Nam từ năm 1919 - 1930
+                        <br>- Việt Nam từ năm 1930 - 1945
+                        <br>- Việt Nam từ năm 1945 - 1954
+                        <br>- Việt Nam từ năm 1954 - 1975
+                        <br> - Việt Nam từ năm 1975 - 2000
+                        <br>
+                        Có thể nói, cuốn sách là một trong những khung kiến thức quan trọng giúp cho các bạn học sinh có thể nắm vững các yếu tố lịch sử thế giới và nước nhà.
+                    </p>
+                    <label for="ch">Ẩn bớt</label>
+                </div>
+                <label for="ch">Đọc thêm</label>
+            </div>
+        </div>
+        <a href="tacgia.html">
+            <div class="skip-page">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAVpJREFUaEPtmDFOxEAMRd+K08AhEFegggYaoKWhgn5paGi3WEQBNOwhEHeA2wArS4kE0URK7JHsEU4ZxZP//h9nZrKg8WvRuH4SwDvBTCATMDqQU8hooLk8EzBbaBzg3ydwALwpTfwZ1KnMVBV1L74DroBz4EEB4QpwDdx2okWIBsINYBf4LDguEOsZSbgBiMYLYAV/drMi6AR4ngjhCiAaT4HHAcR3d38KhDuAFSIEgAUiDIBAHAMvhel0BGxGeiIUwBjEVwdXgggHMBciJEAP8QTs/Jo6pSTCAhwCr60CSDNPcV/CCZfA3C9RKIAx8bJaj63KYQC0W4oQAFrxIXrAIt4doOnt9B7wUdjfnM08Wrr2wA2wbPVI2Zt/D1wqz8PuPdBD7APvE4+Qw8dcp5BSc/0yy3+h+moUIyaAwrSqJZlAVTsVg2UCCtOqlmQCVe1UDJYJKEyrWrIFYedYMZ4gYS0AAAAASUVORK5CYII="/>
+            </div>
+        </a>
+    </div>
+
+    <!-- javascript -->
+
+
+    <script type="module">
+        var playBtn = document.getElementById("playBtn");
+
+
+        import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+        
+        const wavesurfer = WaveSurfer.create({
+          container: '#waveform',
+          waveColor: '#ddd',
+          progressColor: '#fff',
+          height: '20px',
+          barWidth: 4,
+          height: '30px',
+          responsive: true,
+          barRadius: 4,
+          url: 'sound/NHẠC NỀN.MP3',
+        })
+        
+        wavesurfer.on('interaction', () => {
+          wavesurfer.play()
+        })
+
+        playBtn.onclick = function(){
+            wavesurfer.playPause();
+            if(playBtn.src.includes("play.png")){
+                playBtn.src = "img/pause.png";
+            }else{
+                playBtn.src = "img/play.png"
+            }
+        }
+
+        wavesurfer.on('finish', function(){
+            playBtn.src = "img/play.png";
+            wavesurfer.stop();
+        })
+        </script>
+
+<script>
+    let soundBar = document.getElementById("soundBar");
+
+    function toggleSound(){
+        soundBar.classList.toggle("open-bar");
+    }
+</script>
+
+<script>
+    let themeMenu = document.getElementById("themeMenu");
+
+    function toggleMenu(){
+        themeMenu.classList.toggle("cong-cu");
+    }
+</script>
+
+
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("white-theme");
+        if(document.body.classList.contains("white-theme")){
+            icon.src = "img/moon.png";
+        }else{
+            icon.src = "img/sun.png";
+        }
+    }
+</script>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
