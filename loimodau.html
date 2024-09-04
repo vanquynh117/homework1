@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LỜI MỞ ĐẦU</title>
+    <link rel="stylesheet" href="loimodau.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+    <header id="top">
+        <div class="image_header"></div>
+    </header>
+
+    <!-- header -->
+    <div class="navi">
+        <div class="left_icon">
+            <table>
+                <th>
+                    <a href="index.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAghJREFUaEPtmLsuRUEUhr8TOlEpdBoSgkbhEqER4gVcGh0dtUovolHQaFXCC7iEQiKh0SAhFCQKhVIn4czJTsjJnj23NY4TM/Watf5v1sz8s3eJOh+lOtdPAqh1B2N2YBTYBj6BBeA8BmwsgD7gDGjKRL8DCuhKGiIGQDtwAbRUiX0DBoFHSQhpgFbgEmjTiHwGBoBXKQhJgOZsn/caxF0DQ4DaVsFDCqAROAVGLBWdAJPAh2W8NkwCQOXYBaYdxewBs9kt5Tj1O1wCYBNY9FSwBSx5zq1MCwVYBtZCBAAqx7pvjhCAOWDHt3DVvBlAbSnn4QswBhwCDc4V8yeow6wOtTrcTsMHoNplnQoWBHu5tSuAzmWlIJzd2gXA5LJSEE5ubQtg67JSENZubQPg6rJSEFZubQLwdVkpCKNbmwBCXFYKotCtiwAkXFYKQuvWOgBJl5WCyHXrPIBx4EiqqnCeifKT/fhnzjyAp4IvKmE9zunugC4TwEP5kaYc9y+Oe6DTBDAMbAD9f4zgBZgHDkwAOt3q/85vDtMVX9FiFZSpTgCO7bNaXKug1AHHpc/CrRbXKui/dcC0KLaXgSlPtFvIVDgBxDay1IFa30KpA6kDGuO8AboNpnpb/knbY4iRyuPsA1PAKtChEai+llaAfQOAVB5nAL8XTeRZphsjcvnw9AkgfA3DMnwBks9fMcK8lLcAAAAASUVORK5CYII="/>
+                    </a>
+                </th>
+                <th>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"/>
+                </th>
+                <th class="mic_icon" onclick="toggleSound()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAz5JREFUaEPtmFmoTlEUx3/Xi5lMCZmH4gHlBSlJRKYUkvKguOWBpEjiRTwgZEh58aBkjAxRRHmgUIYkZMz8YMhYpth/7aN1T9/9vn2G7+rWWXW73z6ttfb67zXtvWpo5FTTyO2nAPC/PVgND/QFZgCj/d934BZwEtgHPMsTdN4AFgMbgKZljDwIzAO+5gEkLwDScwyYEmjUFWAU8COQv162vAAsAbYkNGYrILlMlAeAnsAdoHlCS34CPYBXCeXqsOcBYB2wMqURq4G1KWX/iuUB4BQwMaURF30upBTPB8BLoEtKC94AnVLK5uaB31kMyBoFeYRQASCLBwsPAEUIFSGU5QSKEMrYTIsqVIRQA4TQZ6ClSfTWgL5F9BHQtzQk2bZGsBXwyay/APpWL4XkwCOgt9HQH3hg1jeBwWmsB64Bw4zsAOCeWT8E+mUFcAkYYZSMBc6btR7xy1IC0GNolZEdB5wx64rvhRAP7AQWGqUb3URhecwjd4EmCUHoSakRzFMjp3e1fSdvBzTpyBRCk52bTxgN9wG52tJuPypJgqGUcY+BXkbJeOBsVgDNgPeA/kc0Ezhs1kryq8DAQASX/dDrm+GfC+wxayVwu0qjl5AQks5NwFKjXIk9CLAGqJrsdUAmlQGhm+sBYL7LGxkYUQtfGOzTNJ4fJdWGAujoY9WOTg4Bs0poVQjMASYAQ/wJqlJptCjj9Ya2JBuOAwrViASuG/ChkkdDAUiPRic6FUsaiWg0koW2AYtiCrTeEaI0CQDxngPGxBQrbhUSSceEyqn9wLSYPhWMqSHGiycJAPF3ADTX7BPb4Ikro2t8Ev6qsLkGvwuAFT5MLPttYHis05dVlxSAlHV1XrhQT4d86+L+qK9QAvXcH1J3l+Dq4Bq768TblLDqBqAm+S709NN4INLd2V0fjriuOTLJZmV4TwOzXaXT3SgRpfFAtIFka91Qd33sQpbEgNe+86o6paIsAKIN2/t2r8qh3yH0woXRZjeS3BXrByGydXjyABApVDfWZUw306HA9Jg16hvqB9f99SBp1SoJLk8A8Q3i86Kq7FUVpR5JASAkIQoPhJxSNXmq6YFq2v1PdwGgQY65zCZ/AJOshzEejdbpAAAAAElFTkSuQmCC"/>
+                </th>
+            </table>
+        </div>
+        <div class="topic">
+            <h1></h1>
+        </div>
+        <div class="right_icon">
+            <table>
+                <th class="theme_icon" onclick="toggleMenu()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAhNJREFUaEPtmUtKxEAQhr8R3LtRPIKuxMcxVBQ9hoKvYyg+j6Gi6DEU3OkRRDfuBTWRCG3RlX4VZAaS1RCS7vqqq/6/wgwY8Wsw4vHTA3R9gv0J9CdQmIG+hJwEngNbIqEXwLaS5O/M5P9LutUJjANvwIQI6gOYAj49wQ4VwAZwqWR0E7gadoA7YFkBuAdWhhlgEngFxhSAL2AaeM+s+dbXLHpgDzhydnmC3xFlzrl3IJ4xY7EAeAZmnIh2GoBj594LMGsWtbNQKcBiVfsPznp/5VLfkmW1VPXCozVEKYDU/ltgrQmy/r3qBKx5QqqcmvmAT/vXgZsm6Pr3tQOgeUJnAFL7ZYA+QJ8ndAYgtf8UqBvYvc7EKOHzhE4AfNo/X9V/LaHutSAa19wTcpt4HziMlEkps6aekAsgg9qtBrkTRSKl0Zl6Qg6Apv3aqOArNzNPyAFo037Np2TDl3wnFPlASPs1gJDkuu+FVKkIoG3uT50Scr8TigDa5v5UgNzvhGyA0NyfCmDiCSlNLLU/NWDf88WekAJgYUgpBhiVoFiAVO3XNjf3hFgAqf1aA8ZkLcUTguvFAMSOxcHNmgdSPCG4ZgyA6YaAaUJiAEyPvEmpWUmGAMybrgGwEoXgX0zmsucUtYUsBwFMNlE60SQ5bSVkdswKgEl5hnogKGNdP9AD9CdQmIG+hAoTWPx6fwLFKSxc4Acy1YUxuyn9FwAAAABJRU5ErkJggg=="/>
+                </th>
+                <th>
+                    <a href="zoom_chuong1.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAApBJREFUaEPtmctqFUEQhr9DVLLwQaL74EoEycULKgSDUXIxgRDcuNGFxLW4EEVwFfAeFZWoGNAkJASCIvgAKr6ISlSMJTPQDD093V19PBmYs8ypqvm/qjo9VZ0WNf+0aq6fBqDTFWwqsJ0r8MdT3AegD/juaZ+b7QbWgH2eftZucbWQD0Cs+BiI5ABa8aEQSQFSiQ+BSAowCdz37F1fM4l512GcFOA3MAy88lVXYTcCPAK6/heAPEcgRoGnSggR/wQqpwJVBVaBW8CiRexpBcQ48MAS8wRwDjhkfBcNIOKPAj+B48ALYIcRWI7bs8DDwEqIePkdmcJ+AceAZWAX8NqAiAIwxef6BOJloV9DIWzipSWHClUWiCXgYFmLuV5k4ni4JKtngMeW7/YCXyoqITafLDbyW3hm+Xt3BjVgi6sZ5sYKbXMBuOHZRrPAFcNWDgNbQnITgfiRGkDiTQF3gKuAiAr53ATOA5IIl3hnTE0F8sAHgI0Q5YbtfuBdpO8/txQAmuerfRsAdQqVAZoKKBOodm8qoE6hMkBTAUDzItP4JnmRyShxOxslLgd2wzVA5qeOjRKyA9wzRF8ErntCXMqgc3MZr+cdvlHDXMw43QN8rYDYA3y22JwCnpf4rgCDodOoLCmyGcl6t2k4n8xWSHMBD11opoG5wixmW2h2Am+A/piFJr+ZMyFSbGNm27hWSlN86eDpe7X4NruzWbCUcSJiHzYhypb6GeCI8byondjVzrW6VimC1P5iS85/8wj1PD2dZvl6WmaUtIU+Zlcd31IoB+R/Bet/T5xeR7ykAPKc99nZrIXwEa8+hcoSo4XwFd82AE0lQsRHASRq7/aGafaB9ua3OnpTgeoctdei9hXYAiupjDGDSS84AAAAAElFTkSuQmCC"/>
+                    </a>
+                </th>
+                <th>
+                    <a href="https://www.facebook.com/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABBRJREFUaEPtmVnoVVUYxX8aOA+o5QQpmCCGYhGiIIpKBpqhkJoPPpggKoJDKQ44D4VjOBRpivqgoIVFZIoKiqCI4IMjDjiAA6XmGCHktBfsA5vj3uccL/fecwS/l/+fc/c+31p7WHt9+9TgNY8arzl+3hDIewaLMAPjgP5AD+AJcAZYCfyRZXDyJDAQ+AloGQB6BJgAHE8ikheBD4CjQO2UUX4IdAUuhNrlQaCVHVX9zRJXgI+Ae77GeRCYD8xxwPwFTAP22mefAEtiS+sr4LuiENDm/NQB8wWwIwZuGLDdeab/hxeFwN9AcwdMQ+DfGLhmwB3nmZZRu6IQeAQ0cMAI7N0YuKbAP86zc2ZGOhaFwEWgvQNGy+XnlCX0AzA+bwK9gdVA5xgQbeIp5iDbB7wF9AOWAi2cdkOBX/IioLW7AhicRTM9bS4BHwJaei9FJWVUm1NyqdO0Vongpf3dAC07b6QRaANMBfpaFfgPOA3sAbYANwPvHW1AfwO8Hfj9T+B389u8BCuhrn2Ag0nkkwh8ZpOE+kv6xgDbnAYiusbo+vuBTmeBSXa9q0l9YDLQ0wxKd/PbfWsxNEA6L26nzVyIgNyhRilL6OS8bNf5oEAHafpco/9Sk7KGj4A0+HzC9McByHA1SkAlCyD78KCsyO3LfAQkacucZFm8ig+b1rg8jFSkYuEjcMxa2ChpFq/iAjxlnONE4EDFUDsv9hGQ0tR12mTxKmp+y1RUs4CNRj6fVQO8cvgIPI8lz+JV1KWxWTLaD1UNHwEtgU4OiixeRSr0XlWRJ2ziBcDs2CZO8ypqrgNOmr6/mkR8M6AlI+XQkigldln1Cdaxpbw01Cd0kA0wSiQgpcZTYIOdydTTtNQkoU0cvU8kNgPvBBI8BmbY+5whgTZStG9NAbMcUPuyR5qZU+X0JTDCVkQ1rYHTSS2XqVJPoUuptYCuS3xx3RCYDmwtN4M0Aq+aT2QXA6ErkxOW+CH7Ypk5DUQve3Wi2RbZ741L/dGau0QM5SagZHVM8fE1MNNUVvUC2X+1aqV6wa284s1HWtseJFEJAlEyjaZmY5QtFV91NtX+f1sTHA51riSBKKdqg1XAx6UwsDdyXYBrvv7VIBDlVd0gax0vdrK4XR2si/ImEOW/CrR1wGRxu7qpltK9FNWcgSi5DjnJcRRZ3K4MZhNfUZQHgRtAa4eACn/3Fk4/xa8W9czXLpdvZL8Bbu2cxe3KV3UoyhJS0bPQAZPlZm6TleNC7AGdD/ps9G5GWZWH0gcOXckUgoBAqGBS7e2WriE+Y401WZfnQRbKLberS7GkumMn8HnSTOWhQi4eqY2stja1ZDKK3Uap1ht3qw2fGHkTcMHphNaXm5OeDx5BEkUikDbY3t/fEChp2MrY6QV1pbUx45R3XQAAAABJRU5ErkJggg=="/>
+                    </a>
+                    </th>
+            </table>
+            <div class="bang-tuy-chinh" id="themeMenu">
+                <div class="tuy-chinh">
+
+                    <div class="chinh-nen">
+                        <h2>Nền</h2>
+                        <img src="img/moon.png" alt="" id="icon">
+                    </div>
+                    <div class="co-chu">
+                        <h2>Cỡ chữ</h2>
+                        <button onclick="changFontSize('increase')">A+</button>
+                        <button onclick="changFontSize('decrease')">A-</button>
+                    </div>
+                    <div class="font">
+                        <h2>Phông chữ</h2>
+                        <button type="button" onclick="changeStyle()">Đổi phông chữ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="body">
+        <div class="main">
+            <div class="left_side">
+                <div class="head_topic">
+                    <h1>Danh Sách</h1>
+                    <ul class="danhsach">
+                        <li>
+                            <a href="">Mục Lục</a>
+                            <ul class="dropdown">
+                                <li><a href="Trang trách nhiệm.html">Trang trách nhiệm</a></li>
+                                <li><a href="loimodau.html">Lời mở đầu</a></li>
+                                <li><a href="chuong1.html">Chương 1</a></li>
+                                <li><a href="chuong2.html">Chương 2</a></li>
+                            </ul>
+                        </li>
+
+                        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    </ul>
+                </div>
+                <div class="sound-bar-warp" id="soundBar">
+                    <div class="sound-bar">
+                        <p>Lời mở đầu</p>
+                        <div class="track">
+                        <img id="playBtn" src="img/play.png"/>
+                        </div>
+                        <div id="waveform"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="book_page">
+                    <div class="book">
+                        <h2>LỜI MỞ ĐẦU</h2>
+                        <p id="loi-mo-dau">
+Việt Nam đã trải qua mấy nghìn năm lịch sử, còn sáng chói bao chiến công hào hùng trên những chặng đường. Trong quá trình dựng nước và giữ nước, cha ông đã để lại cho chúng ta một dải non sông thống nhất từ Bắc vào Nam, giàu tài nguyên thiên nhiên, nhiều truyền thống tốt đẹp. Đất nước cũng nằm ở giao điểm các nền văn hóa văn minh lớn gặp nhau, đã tiếp biến nhiều giá trị làm đa dạng các yếu tố dân tộc và lối sống. Lật lại những trang sử các thời kỳ, mỗi người dân Việt, dù trong hay ngoài nước, luôn được khơi dậy tình yêu quê hương, niềm tự hào tổ quốc. Đó là thời nghìn năm Bắc thuộc với tinh thần chống Hán hóa, nhiều cuộc khởi nghĩa giành lại chủ quyền diễn ra mà trận chiến thắng Bạch Đằng là đỉnh cao. Đó là thời kỳ độc lập tự chủ, cha ông không những bảo vệ non sông mà còn mở mang bờ cõi, không những giữ gìn mà còn làm phong phú trường tồn bản sắc văn hóa Việt Nam. Với những chiến công hiển hách chống phương Bắc xâm lược, những anh hùng Thập đạo tƣớng quân Lê Hoàn, Lý Thường Kiệt, Trần Quốc Tuấn, Lê Lợi, Nguyễn Huệ… mãi mãi lưu danh. Đó còn là đời sống tôn giáo, lễ hội, tâm linh, phong tục tập quán, ngôn ngữ, các công trình mỹ thuật và kiến trúc, cùng hàng loạt hệ giá trị giàu tính cộng đồng, nhân nghĩa, nhân văn Việt Nam. Bước vào thời kỳ cận đại, những cuộc chiến tranh khốc liệt diễn ra, cả nước phải trả giá bằng biết bao hy sinh. Nhìn lại hệ tư tưởng cộng sản từ khi xuất hiện ở Việt Nam, ban đầu là gắn vào đấu tranh giải phóng dân tộc dẫn đến chia cắt hai miền năm 1954. Tiếp theo, Việt Nam là chiến trường đối đầu giữa các hệ tư tưởng. Sau thống nhất năm 1975 là cuộc chiến hai đầu biên giới… Ở giai đoạn hòa bình, có thời kỳ động lực phát triển xã hội gần như bị triệt tiêu. Thời kỳ đổi mới không toàn diện tạo ra nhiều nguy hiểm, tác hại trực tiếp có, hậu quả không dễ khắc phục vẫn tiềm tàng. Thời kỳ hội nhập sâu rộng hiện nay càng thêm nhiều rối ren trong đường lối nội trị lẫn ngoại giao. Câu hỏi mà nhiều người đang quan tâm: liệu Việt Nam sẽ tiếp tục tình trạng phân hóa giàu nghèo, bất công và tụt hậu đến mức nào? Gần một thế kỷ, các văn kiện, cương lĩnh, đƣờng lối, kể cả hiến pháp và pháp luật thể hiện tƣ tưởng và đường lối cộng sản đã bất ổn, xã hội không thể tiếp tục chịu đựng và hy sinh mãi. Theo quan điểm của Đảng Cộng sản Việt Nam, từ khi có đấu tranh vô sản, lịch sử dân tộc cũng chính là lịch sử của đảng phái này. Cho nên, phản ánh đã trở nên thiếu tôn trọng sự thật. Nhiều lối rẽ đau thương cùng đường bị che giấu. Nhiều góc khuất chưa được sáng tỏ, còn bị phủ lên đó giải thích chủ quan. Ở khởi điểm ban đầu, nhiều người có thể tin vào lý tưởng tốt đẹp, nhưng qua các giai đoạn cách mạng, lý tưởng ấy đã không còn. Sai lầm lớn nhất của Đảng Cộng sản là đã đặt lợi ích giai cấp lên trên lợi ích dân tộc, thậm chí không ít thời điểm và sự kiện cho thấy dân tộc phải chịu hy sinh vì nhiệm vụ Quốc tế cộng sản. Trong quá trình hoạt động, Đảng Cộng sản cũng tiêu diệt mọi lực lượng có tư tưởng và quan điểm đa dạng, tiến tới độc quyền. Ngày nay, lợi ích một nhóm nhỏ lại tiếp tục đặt trên lợi ích dân tộc, mối quan hệ cộng sản giữa Việt Nam và Trung Quốc bất chấp quyền lợi toàn dân. Thế hệ trẻ sẽ bước tiếp như thế nào trên con đường nhiều hy sinh và nguy hiểm đó? Vấn đề trước hết là phải nhìn lại lịch sử để có đánh giá xác thực, thấy sai lầm mà tránh lặp lại, để hình thành những tư tưởng và lực lượng tiên phong. Đây là việc làm quan trọng và cần thiết, tạo điều kiện cho mỗi người dân nhìn thấy con đường xuyên suốt của dân tộc, định hướng cho thế hệ trẻ đóng góp tích cực nhằm chấn hưng đất nước. Trong thời đại hội nhập, xã hội cần phát huy dân chủ và thượng tôn pháp luật, mỗi người cần được tôn trọng quyền công dân và quyền con người. Chúng ta cần có tầm nhìn rộng để thấy xu hướng thời đại, xác định đất nước đứng ở vị trí nào trên bản đồ thế giới. Với tinh thần ấy, “Con đường Việt Nam” sẽ cố gắng làm rõ những chặng đường dân tộc đã qua và đề nghị một triển hướng cho tương lai. Cuốn sách là dịp gặp mặt hội thảo với nhiều quan điểm, chính kiến về các vấn đề bị che khuất lâu nay. Cuốn sách cũng nhằm tưởng nhớ ông Hoàng Minh Chính, cố Tổng Thư ký Đảng Dân Chủ Việt Nam, nguyên Viện trưởng Viện Triết học Mác-Lênin tại Việt Nam.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <a href="tacgia.html">
+                <div class="back-page">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAWpJREFUaEPtmD8yRTEUh7/HYtiFTdCgMEaj02joaTQaDRoaKmuwDPZicIqYTOY9Mzk5OZFxXn2TfL8/ucl9Cyb/LSbnJwSMTjASiAQaHYgKNRrYPDwSaLawcYJ/ncBnYZ7WjC3gVRuEdlFZz0LAIXAPXADnGhEjBQj8Hfzcx06A61oRowQcAbdLYDeBtxoRIwSUzqc6HgAPNfDyrLcAU3hvAXvAY2GavAhUzqekvBIQeKnHWlYRgd8Fnmprkz/vIaAbvEeFlsF/APutzntUaBt4Lmoj8DvAS0ttPCok8NLt9Wwxc/ieFZpegJgzdYVSc6bexL+JMDkDeu6B8iXT7SzwOMjyJKa9SiQRU1/muojwrFC+L1Z90Gx8X/Dea07pUQKEMX0PJ95T4KoG3vMttIrrGLgBLoGzWvi/IEAYhv2tojHMfEzLHjCH0UwYAjSuWY6JBCzd1MwVCWhcsxwTCVi6qZkrEtC4ZjnmCz43VjGWhm+7AAAAAElFTkSuQmCC"/>
+                </div>
+            </a>
+            <a href="chuong1.html">
+                <div class="skip-page">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAVpJREFUaEPtmDFOxEAMRd+K08AhEFegggYaoKWhgn5paGi3WEQBNOwhEHeA2wArS4kE0URK7JHsEU4ZxZP//h9nZrKg8WvRuH4SwDvBTCATMDqQU8hooLk8EzBbaBzg3ydwALwpTfwZ1KnMVBV1L74DroBz4EEB4QpwDdx2okWIBsINYBf4LDguEOsZSbgBiMYLYAV/drMi6AR4ngjhCiAaT4HHAcR3d38KhDuAFSIEgAUiDIBAHAMvhel0BGxGeiIUwBjEVwdXgggHMBciJEAP8QTs/Jo6pSTCAhwCr60CSDNPcV/CCZfA3C9RKIAx8bJaj63KYQC0W4oQAFrxIXrAIt4doOnt9B7wUdjfnM08Wrr2wA2wbPVI2Zt/D1wqz8PuPdBD7APvE4+Qw8dcp5BSc/0yy3+h+moUIyaAwrSqJZlAVTsVg2UCCtOqlmQCVe1UDJYJKEyrWrIFYedYMZ4gYS0AAAAASUVORK5CYII="/>
+                </div>
+            </a>
+            <a href="#top">
+                <div class="top">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAWtJREFUaEPtmM1NA0EMhb9w404JFAFXOkCiD6ASoI9I6YArFEEJ3LkBetJEQVGyO/4ZhZXsa8az77Pf2FJWLDxWC9dPAZy6g9WBJXTg58QiJ13SY6ECCHawOhAs4Nj0njcwVkHw9gIIFjCcProDD03hc1jpkQtGAtwC6/bdO2AzAmIUwBXwCpw30V/ADfCeDTEC4BJ4Ay72xH4C18BHJkQ2gERLvCAOhcQLQjApkQkgu8g2ss9UyEayk2wVjiyAs/Zg9XB7Qg9aD/u75/DUmSwAjcl7o5gXYDtmjam74xkAEvHkVPAIhHZEFGA762UhT8hCoR0RAdif9R4A5YR2hBfg2Kz3Qrh3hAdgbtZ7IVw7wgrQO+u9EOYdYQGwznovhGlHWAA8s94L0b0jLABzYqx/v6R8O+WSRlYAcy0+9Ht14E9VykJlIU8FykLBqtUUKgv9IwsFpfjSM9+AT0EwqwCCBQynVwfCJQxe8Au7Uzox5GUPtgAAAABJRU5ErkJggg=="/>
+                </div>
+            </a>
+            </div>
+            
+            <!-- right-side -->
+        </div>
+    </div>
+
+    <!-- java -->
+
+    <script type="module">
+        var playBtn = document.getElementById("playBtn");
+
+
+        import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+        
+        const wavesurfer = WaveSurfer.create({
+          container: '#waveform',
+          waveColor: '#ddd',
+          progressColor: '#fff',
+          height: '20px',
+          barWidth: 4,
+          height: '30px',
+          responsive: true,
+          barRadius: 4,
+          url: 'sound/lời mở đầu.MP3',
+        })
+        
+        wavesurfer.on('interaction', () => {
+          wavesurfer.play()
+        })
+
+        playBtn.onclick = function(){
+            wavesurfer.playPause();
+            if(playBtn.src.includes("play.png")){
+                playBtn.src = "img/pause.png";
+            }else{
+                playBtn.src = "img/play.png"
+            }
+        }
+
+        wavesurfer.on('finish', function(){
+            playBtn.src = "img/play.png";
+            wavesurfer.stop();
+        })
+        </script>
+
+<script>
+    let soundBar = document.getElementById("soundBar");
+
+    function toggleSound(){
+        soundBar.classList.toggle("open-bar");
+    }
+</script>
+
+<script>
+    let themeMenu = document.getElementById("themeMenu");
+
+    function toggleMenu(){
+        themeMenu.classList.toggle("cong-cu");
+    }
+</script>
+
+<script>
+    function changFontSize(type){
+        
+        let ids = ["#loi-mo-dau"];
+
+        ids.forEach(id => {
+            //get element
+            let el = document.querySelector(id);
+
+            //get font size
+            let fontSize = window.getComputedStyle(el, null).getPropertyValue("font-size")
+
+            //conver to float
+            fontSize = parseFloat(fontSize);
+
+            //change
+            if(type === "increase"){
+                el.style.fontSize = (fontSize + 5) + "px"
+            }else{
+                el.style.fontSize = (fontSize - 5) + "px";
+            }
+        });
+    }
+</script>
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "img/moon.png";
+        }else{
+            icon.src = "img/sun.png";
+        }
+    }
+</script>
+
+<script src="index.js"></script>
+<script>
+    function changeStyle() {
+    var fonts = ["Arial", "Times New Roman"];
+    var selectedFont = prompt("Đổi phông chữ:\n1. Arial\n2. Times New Roman\n");
+
+    if (selectedFont >= 1 && selectedFont <= fonts.length) {
+        document.body.style.fontFamily = fonts[selectedFont - 1];
+    } else {
+        alert("Lựa chọn không hợp lệ!");
+    }
+}
+</script>
+</body>
+</html>

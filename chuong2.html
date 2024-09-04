@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHẦN HAI: LỊCH SỬ VIỆT NAM TỪ NĂM 1919 ĐẾN NĂM 2000</title>
+    <link rel="stylesheet" href="chuong2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    /* CSS cho phần tử được highlight */
+    .highlighted {
+        background-color: yellow;
+    }
+</style>
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+    <header>
+        <div class="image_header" id="top"></div>
+    </header>
+
+    <!-- header -->
+    <div class="navi">
+        <div class="left_icon">
+            <table>
+                <th>
+                    <a href="index.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAghJREFUaEPtmLsuRUEUhr8TOlEpdBoSgkbhEqER4gVcGh0dtUovolHQaFXCC7iEQiKh0SAhFCQKhVIn4czJTsjJnj23NY4TM/Watf5v1sz8s3eJOh+lOtdPAqh1B2N2YBTYBj6BBeA8BmwsgD7gDGjKRL8DCuhKGiIGQDtwAbRUiX0DBoFHSQhpgFbgEmjTiHwGBoBXKQhJgOZsn/caxF0DQ4DaVsFDCqAROAVGLBWdAJPAh2W8NkwCQOXYBaYdxewBs9kt5Tj1O1wCYBNY9FSwBSx5zq1MCwVYBtZCBAAqx7pvjhCAOWDHt3DVvBlAbSnn4QswBhwCDc4V8yeow6wOtTrcTsMHoNplnQoWBHu5tSuAzmWlIJzd2gXA5LJSEE5ubQtg67JSENZubQPg6rJSEFZubQLwdVkpCKNbmwBCXFYKotCtiwAkXFYKQuvWOgBJl5WCyHXrPIBx4EiqqnCeifKT/fhnzjyAp4IvKmE9zunugC4TwEP5kaYc9y+Oe6DTBDAMbAD9f4zgBZgHDkwAOt3q/85vDtMVX9FiFZSpTgCO7bNaXKug1AHHpc/CrRbXKui/dcC0KLaXgSlPtFvIVDgBxDay1IFa30KpA6kDGuO8AboNpnpb/knbY4iRyuPsA1PAKtChEai+llaAfQOAVB5nAL8XTeRZphsjcvnw9AkgfA3DMnwBks9fMcK8lLcAAAAASUVORK5CYII="/>
+                    </a>
+                </th>
+                <th>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"/>
+                </th>
+                <th class="mic_icon" onclick="toggleSound()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAz5JREFUaEPtmFmoTlEUx3/Xi5lMCZmH4gHlBSlJRKYUkvKguOWBpEjiRTwgZEh58aBkjAxRRHmgUIYkZMz8YMhYpth/7aN1T9/9vn2G7+rWWXW73z6ttfb67zXtvWpo5FTTyO2nAPC/PVgND/QFZgCj/d934BZwEtgHPMsTdN4AFgMbgKZljDwIzAO+5gEkLwDScwyYEmjUFWAU8COQv162vAAsAbYkNGYrILlMlAeAnsAdoHlCS34CPYBXCeXqsOcBYB2wMqURq4G1KWX/iuUB4BQwMaURF30upBTPB8BLoEtKC94AnVLK5uaB31kMyBoFeYRQASCLBwsPAEUIFSGU5QSKEMrYTIsqVIRQA4TQZ6ClSfTWgL5F9BHQtzQk2bZGsBXwyay/APpWL4XkwCOgt9HQH3hg1jeBwWmsB64Bw4zsAOCeWT8E+mUFcAkYYZSMBc6btR7xy1IC0GNolZEdB5wx64rvhRAP7AQWGqUb3URhecwjd4EmCUHoSakRzFMjp3e1fSdvBzTpyBRCk52bTxgN9wG52tJuPypJgqGUcY+BXkbJeOBsVgDNgPeA/kc0Ezhs1kryq8DAQASX/dDrm+GfC+wxayVwu0qjl5AQks5NwFKjXIk9CLAGqJrsdUAmlQGhm+sBYL7LGxkYUQtfGOzTNJ4fJdWGAujoY9WOTg4Bs0poVQjMASYAQ/wJqlJptCjj9Ya2JBuOAwrViASuG/ChkkdDAUiPRic6FUsaiWg0koW2AYtiCrTeEaI0CQDxngPGxBQrbhUSSceEyqn9wLSYPhWMqSHGiycJAPF3ADTX7BPb4Ikro2t8Ev6qsLkGvwuAFT5MLPttYHis05dVlxSAlHV1XrhQT4d86+L+qK9QAvXcH1J3l+Dq4Bq768TblLDqBqAm+S709NN4INLd2V0fjriuOTLJZmV4TwOzXaXT3SgRpfFAtIFka91Qd33sQpbEgNe+86o6paIsAKIN2/t2r8qh3yH0woXRZjeS3BXrByGydXjyABApVDfWZUw306HA9Jg16hvqB9f99SBp1SoJLk8A8Q3i86Kq7FUVpR5JASAkIQoPhJxSNXmq6YFq2v1PdwGgQY65zCZ/AJOshzEejdbpAAAAAElFTkSuQmCC"/>
+                </th>
+            </table>
+        </div>
+        <div class="topic">
+            <h1>PHẦN HAI: LỊCH SỬ VIỆT NAM TỪ NĂM 1919 ĐẾN NĂM 2000
+                </h1>
+        </div>
+        <div class="right_icon">
+            <table>
+                <th class="theme_icon" onclick="toggleMenu()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAhNJREFUaEPtmUtKxEAQhr8R3LtRPIKuxMcxVBQ9hoKvYyg+j6Gi6DEU3OkRRDfuBTWRCG3RlX4VZAaS1RCS7vqqq/6/wgwY8Wsw4vHTA3R9gv0J9CdQmIG+hJwEngNbIqEXwLaS5O/M5P9LutUJjANvwIQI6gOYAj49wQ4VwAZwqWR0E7gadoA7YFkBuAdWhhlgEngFxhSAL2AaeM+s+dbXLHpgDzhydnmC3xFlzrl3IJ4xY7EAeAZmnIh2GoBj594LMGsWtbNQKcBiVfsPznp/5VLfkmW1VPXCozVEKYDU/ltgrQmy/r3qBKx5QqqcmvmAT/vXgZsm6Pr3tQOgeUJnAFL7ZYA+QJ8ndAYgtf8UqBvYvc7EKOHzhE4AfNo/X9V/LaHutSAa19wTcpt4HziMlEkps6aekAsgg9qtBrkTRSKl0Zl6Qg6Apv3aqOArNzNPyAFo037Np2TDl3wnFPlASPs1gJDkuu+FVKkIoG3uT50Scr8TigDa5v5UgNzvhGyA0NyfCmDiCSlNLLU/NWDf88WekAJgYUgpBhiVoFiAVO3XNjf3hFgAqf1aA8ZkLcUTguvFAMSOxcHNmgdSPCG4ZgyA6YaAaUJiAEyPvEmpWUmGAMybrgGwEoXgX0zmsucUtYUsBwFMNlE60SQ5bSVkdswKgEl5hnogKGNdP9AD9CdQmIG+hAoTWPx6fwLFKSxc4Acy1YUxuyn9FwAAAABJRU5ErkJggg=="/>
+                </th>
+                <th>
+                    <a href="zoom_chuong1.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAApBJREFUaEPtmctqFUEQhr9DVLLwQaL74EoEycULKgSDUXIxgRDcuNGFxLW4EEVwFfAeFZWoGNAkJASCIvgAKr6ISlSMJTPQDD093V19PBmYs8ypqvm/qjo9VZ0WNf+0aq6fBqDTFWwqsJ0r8MdT3AegD/juaZ+b7QbWgH2eftZucbWQD0Cs+BiI5ABa8aEQSQFSiQ+BSAowCdz37F1fM4l512GcFOA3MAy88lVXYTcCPAK6/heAPEcgRoGnSggR/wQqpwJVBVaBW8CiRexpBcQ48MAS8wRwDjhkfBcNIOKPAj+B48ALYIcRWI7bs8DDwEqIePkdmcJ+AceAZWAX8NqAiAIwxef6BOJloV9DIWzipSWHClUWiCXgYFmLuV5k4ni4JKtngMeW7/YCXyoqITafLDbyW3hm+Xt3BjVgi6sZ5sYKbXMBuOHZRrPAFcNWDgNbQnITgfiRGkDiTQF3gKuAiAr53ATOA5IIl3hnTE0F8sAHgI0Q5YbtfuBdpO8/txQAmuerfRsAdQqVAZoKKBOodm8qoE6hMkBTAUDzItP4JnmRyShxOxslLgd2wzVA5qeOjRKyA9wzRF8ErntCXMqgc3MZr+cdvlHDXMw43QN8rYDYA3y22JwCnpf4rgCDodOoLCmyGcl6t2k4n8xWSHMBD11opoG5wixmW2h2Am+A/piFJr+ZMyFSbGNm27hWSlN86eDpe7X4NruzWbCUcSJiHzYhypb6GeCI8byondjVzrW6VimC1P5iS85/8wj1PD2dZvl6WmaUtIU+Zlcd31IoB+R/Bet/T5xeR7ykAPKc99nZrIXwEa8+hcoSo4XwFd82AE0lQsRHASRq7/aGafaB9ua3OnpTgeoctdei9hXYAiupjDGDSS84AAAAAElFTkSuQmCC"/>
+                    </a>
+                </th>
+                <th>
+                    <a href="https://www.facebook.com/">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABBRJREFUaEPtmVnoVVUYxX8aOA+o5QQpmCCGYhGiIIpKBpqhkJoPPpggKoJDKQ44D4VjOBRpivqgoIVFZIoKiqCI4IMjDjiAA6XmGCHktBfsA5vj3uccL/fecwS/l/+fc/c+31p7WHt9+9TgNY8arzl+3hDIewaLMAPjgP5AD+AJcAZYCfyRZXDyJDAQ+AloGQB6BJgAHE8ikheBD4CjQO2UUX4IdAUuhNrlQaCVHVX9zRJXgI+Ae77GeRCYD8xxwPwFTAP22mefAEtiS+sr4LuiENDm/NQB8wWwIwZuGLDdeab/hxeFwN9AcwdMQ+DfGLhmwB3nmZZRu6IQeAQ0cMAI7N0YuKbAP86zc2ZGOhaFwEWgvQNGy+XnlCX0AzA+bwK9gdVA5xgQbeIp5iDbB7wF9AOWAi2cdkOBX/IioLW7AhicRTM9bS4BHwJaei9FJWVUm1NyqdO0Vongpf3dAC07b6QRaANMBfpaFfgPOA3sAbYANwPvHW1AfwO8Hfj9T+B389u8BCuhrn2Ag0nkkwh8ZpOE+kv6xgDbnAYiusbo+vuBTmeBSXa9q0l9YDLQ0wxKd/PbfWsxNEA6L26nzVyIgNyhRilL6OS8bNf5oEAHafpco/9Sk7KGj4A0+HzC9McByHA1SkAlCyD78KCsyO3LfAQkacucZFm8ig+b1rg8jFSkYuEjcMxa2ChpFq/iAjxlnONE4EDFUDsv9hGQ0tR12mTxKmp+y1RUs4CNRj6fVQO8cvgIPI8lz+JV1KWxWTLaD1UNHwEtgU4OiixeRSr0XlWRJ2ziBcDs2CZO8ypqrgNOmr6/mkR8M6AlI+XQkigldln1Cdaxpbw01Cd0kA0wSiQgpcZTYIOdydTTtNQkoU0cvU8kNgPvBBI8BmbY+5whgTZStG9NAbMcUPuyR5qZU+X0JTDCVkQ1rYHTSS2XqVJPoUuptYCuS3xx3RCYDmwtN4M0Aq+aT2QXA6ErkxOW+CH7Ypk5DUQve3Wi2RbZ741L/dGau0QM5SagZHVM8fE1MNNUVvUC2X+1aqV6wa284s1HWtseJFEJAlEyjaZmY5QtFV91NtX+f1sTHA51riSBKKdqg1XAx6UwsDdyXYBrvv7VIBDlVd0gax0vdrK4XR2si/ImEOW/CrR1wGRxu7qpltK9FNWcgSi5DjnJcRRZ3K4MZhNfUZQHgRtAa4eACn/3Fk4/xa8W9czXLpdvZL8Bbu2cxe3KV3UoyhJS0bPQAZPlZm6TleNC7AGdD/ps9G5GWZWH0gcOXckUgoBAqGBS7e2WriE+Y401WZfnQRbKLberS7GkumMn8HnSTOWhQi4eqY2stja1ZDKK3Uap1ht3qw2fGHkTcMHphNaXm5OeDx5BEkUikDbY3t/fEChp2MrY6QV1pbUx45R3XQAAAABJRU5ErkJggg=="/>
+                    </a>
+                    </th>
+            </table>
+            <div class="bang-tuy-chinh" id="themeMenu">
+                <div class="tuy-chinh">
+
+                    <div class="chinh-nen">
+                        <h2>Nền</h2>
+                        <img src="img/moon.png" alt="" id="icon">
+                    </div>
+                    <div class="co-chu">
+                        <h2>Cỡ chữ</h2>
+                        <button onclick="changFontSize('increase')">A+</button>
+                        <button onclick="changFontSize('decrease')">A-</button>
+                    </div>
+                    <div class="font">
+                        <h2>Phông chữ</h2>
+                        <button type="button" onclick="changeStyle()">Đổi phông chữ</button>
+                    </div>
+                    <div class="highlight">
+                        <h2>Highlight</h2>
+                        <button type="button" onclick="highlightSelection('content')">Highlight từ được chọn</button>
+                        <button type="button" onclick="removeAllHighlights('content')">Xóa tất cả highlight</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="body">
+        <div class="main">
+            <div class="left_side">
+                <div class="head_topic">
+                    <h1>Danh Sách</h1>
+                    <ul class="danhsach">
+                        <li>
+                            <a href="">Mục Lục</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">Giới thiệu nội dung</a></li>
+                                <li><a href="loimodau.html">Lời mở đầu</a></li>
+                                <li><a href="tacgia.html">Tác Giả</a></li>
+                                <li><a href="chuong1.html">Phần 1</a></li>
+                                <li><a href="chuong2.html">Phần 2</a></li>
+                                <li class="chuong2"><a href="#chuong2_topic">Chương 1</a></li>
+             
+                                <li class="chuong2"><a href="#chuong2-topic-2">Chương 2</a></li>
+                    
+                        </li>
+                        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                    </ul>
+                </div>
+                <div class="sound-bar-warp" id="soundBar">
+                    <div class="sound-bar">
+                        <p>Chương 2</p>
+                        <div class="track">
+                        <img id="playBtn" src="img/play.png"/>
+                        </div>
+                        <div id="waveform"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="book_page">
+                    <div class="book">
+                        <h2 class="chuong2-text" id="chuong2_topic">
+                            Chương I: VIỆT NAM TỪ NĂM 1919 ĐẾN NĂM 1930                            
+                        </h2>
+                        <p class="chuong2-text" id="chuong2_part2">
+                              <p style="text-align: center; font-weight: bold;">Bài 14: XÂY DỰNG CHỦ NGHĨA XÃ HỘI Ở MIỀN BẮC, ĐẤU TRANH CHỐNG ĐẾ QUỐC MĨ VÀ CHÍNH QUYỀN SÀI GÒN Ở MIỀN NAM (1954 – 1965)</p>
+                              <audio id="audio" controls autoplay>
+                                <source src="./sound/chương2.ogg" type="audio/ogg">
+                                <source src="./sound/chương 2.MP3" type="audio/mpeg">
+                              </audio>
+                              <p class="chuong2-text" id="chuong2_part2"><br>Do âm mưu của đế quốc Mĩ và chính quyền Ngô Đình Diệm, nước ta tạm thời bị chia cắt làm hai miền với hai chế độ chính trị – xã hội khác nhau. Trong tình hình đó, miền Bắc vừa tiếp tục thực hiện những nhiệm vụ còn lại của cách mạng dân tộc dân chủ nhân dân, vừa thực hiện những nhiệm vụ của cách mạng trong thời kì quá độ lên chủ nghĩa xã hội. Miền Nam tiếp tục thực hiện những nhiệm vụ của cách mạng dân tộc dân chủ nhân dân, đấu tranh chống đế quốc Mĩ xâm lược và chính quyền tay sai.
+<br>I – TÌNH HÌNH VÀ NHIỆM VỤ CÁCH MẠNG NƯỚC TA SAU HIỆP ĐỊNH GIƠNEVO NĂM 1954 VỀ ĐÔNG DƯƠNG
+	Hiệp định Giơnevơ năm 1954 về Đông Dương được kí kết đã chấm dứt cuộc chiến tranh xâm lược ba nước Việt Nam, Lào, Campuchia của thực dân Pháp, có sự giúp sức của đế quốc Mĩ.
+	Thực hiện Hiệp định Giơnevơ, ngày 10 – 10 – 1954, quân ta tiến vào tiếp quản Hà Nội trong không khí tưng bừng của ngày hội giải phóng. Ngày 1 – 1 – 1955, Trung ương Đảng, Chính phủ và Chủ tịch Hồ Chí Minh ra mắt nhân dân Thủ đô. Toán lính Pháp cuối cùng rút khỏi đảo Cát Bà (Hải Phòng) ngày 16 – 5 – 1955. Miền Bắc nước ta được hoàn toàn giải phóng.
+	Giữa tháng 5 – 1956, Pháp rút quân khỏi miền Nam khi chưa thực hiện cuộc hiệp thương tổng tuyển cử thống nhất hai miền Nam – Bắc Việt Nam theo điều khoản của Hiệp định Giơnevơ.
+<video id="video" style="text-align: center;" width="700" height="500" controls>
+        <source src="./video/video1.mp4" type="video/mp4">
+        <source src="./video/video1.ogg" type="video/ogg">
+    </video>
+    <div> <p style="text-align: center;">
+            <p class="chuong2-text" id="chuong2_part2">
+            <br>Ngay sau khi Hiệp định Giơnevơ năm 1954 về Đông Dương được kí kết, Mĩ liền thay thế Pháp, dựng lên chính quyền Ngô Đình Diệm ở miền Nam, thực hiện âm mưu chia cắt Việt Nam, biến miền Nam Việt Nam thành thuộc địa kiểu mới và căn cứ quân sự của Mĩ ở Đông Dương và Đông Nam Á.
+<br>Do đó, sự nghiệp cách mạng dân tộc dân chủ nhân dân trên cả nước chưa hoàn thành, nhân dân ta vừa phải hàn gắn vết thương chiến tranh, khôi phục kinh tế ở miền Bắc, đưa miền Bắc tiến lên chủ nghĩa xã hội, vừa phải tiếp tục cuộc cách mạng dân tộc dân chủ nhân dân ở miền Nam, thực hiện hoà bình thống nhất nước nhà.
+<br>- Tình hình nước ta sau Hiệp định Giơnevơ năm 1954 về Đông Dương như thế nào ?
+<br>II – MIỀN BẮC HOÀN THÀNH CẢI CÁCH RUỘNG ĐẤT, KHÔI PHỤC KINH TẾ, CẢI TẠO QUAN HỆ SẢN XUẤT (1954 – 1960)
+<br>1. Hoàn thành cải cách ruộng đất, khôi phục kinh tế, hàn gắn vết thương chiến tranh (1954 – 1957)
+<br>a) Hoàn thành cải cách ruộng đất
+Căn cứ vào hoàn cảnh thực tế ở miền Bắc và yêu cầu về quyền lợi kinh tế, chính trị của nông dân, củng cố khối liên minh công – nông, mở rộng mặt trận dân tộc thống nhất, Đảng và Chính phủ quyết định “Đẩy mạnh phát động quần chúng thực hiện cải cách ruộng đất”.
+Thực hiện chủ trương của Trung ương, trong hơn 2 năm (1954 – 1956) miền Bắc tiến hành tiếp đợt 6 giảm tô và 4 đợt cải cách ruộng đất ở 3 314 xã thuộc 22 tỉnh đồng bằng và trung du. Khẩu hiệu “người cày có ruộng” đã trở thành hiện thực.
+Qua 5 đợt cải cách ruộng đất , đã tịch thu, trưng thu, trưng mua khoảng 81 vạn hécta ruộng đất, 10 vạn trâu bò và 1,8 triệu nông cụ từ tay giai cấp địa chủ đem chia cho 2 triệu hộ nông dân.
+<p style="text-align: center;">
+    <img style="text-align: center; width: 600px; height: 500px;" src="./hinh58.png" alt="Mô tả ảnh"></p>
+        <h2 style="text-align: center; font-size: small;">Hình 58. Nông dân phấn khởi nhận ruộng trong cải cách ruộng đất</h2>
+</p>
+<p class="chuong2-text" id="chuong2_part2">
+Trong cải cách ruộng đất, chúng ta cũng phạm một số sai lầm như đấu tố tràn lan, thô bạo, đấu tố cả những địa chủ kháng chiến, những người thuộc tầng lớp trên có công với cách mạng, quy nhầm một số nông dân, cán bộ, đảng viên thành địa chủ.
+Sai lầm của ta trong cải cách ruộng đất được Đảng, Chính phủ phát hiện và kịp thời sửa chữa. Công tác sửa sai được tiến hành trong cả năm 1957. Nhờ đó, hậu quả của sai lầm được hạn chế. Sau cải cách ruộng đất, bộ mặt nông thôn miền Bắc có nhiều thay đổi, khối liên minh công – nông được củng cố.
+<br>b) Khôi phục kinh tế, hàn gắn vết thương chiến tranh
+Đây là nhiệm vụ tất yếu trong thời kì đầu sau chiến tranh. Kì họp thứ 4 Quốc hội khoá I (từ ngày 20 đến ngày 26 – 3 – 1955) đã quyết nghị : “Ra sức củng cố miền Bắc bằng cách đẩy mạnh và hoàn thành cải cách ruộng đất đúng theo kế hoạch, ra sức khôi phục và phát triển kinh tế – văn hoá”.
+Công cuộc khôi phục kinh tế được toàn dân tích cực hưởng ứng và triển khai trong tất cả các ngành.
+Trong nông nghiệp, nông dân hăng hái khai khẩn ruộng đất bỏ hoang, bảo đảm cày cấy hết ruộng đất vắng chủ, tăng thêm đàn trâu bò, sắm thêm nông cụ. Nhiều đập nước được sửa chữa. Nhiều công trình thuỷ nông mới được xây dựng, có tác dụng mở rộng diện tích tưới và tiêu nước.
+<p style="text-align: center;">
+    <img style="text-align: center; width: 600px; height: 500px;" src="./hinh59.png" alt="Mô tả ảnh"></p>
+        <h2 style="text-align: center; font-size: small;">Hình 59. Chủ tịch Hồ Chí Minh thăm công trình thuỷ nông Bắc – Hưng – Hải (1958)</h2>
+</p>
+<p class="chuong2-text" id="chuong2_part2">
+<br>Cuối năm 1957, sản lượng lương thực đạt gần 4 triệu tấn, tăng hơn 1,5 triệu tấn so với năm 1939. Nạn đói kinh niên ở miền Bắc căn bản được giải quyết.
+Trong công nghiệp, chúng ta đã nhanh chóng khôi phục và mở rộng hầu hết các nhà máy, xí nghiệp bị phá hỏng, xây dựng thêm một số nhà máy mới như : cơ khí Hà Nội, diêm Thống Nhất, gỗ Cầu Đuống, thuốc lá Thăng Long, cá hộp Hải Phòng, chè Phú Thọ,... Đến cuối năm 1957, miền Bắc có 97 nhà máy, xí nghiệp lớn do Nhà nước quản lí.
+Các ngành thủ công nghiệp, thương nghiệp nhanh chóng được khôi phục, bảo đảm cung cấp nhiều mặt hàng tiêu dùng thiết yếu cho nhân dân và giải quyết phần nào việc làm cho người lao động. Ngoại thương dần dần tập trung vào Nhà nước. Đến cuối năm 1957, miền Bắc đã đặt quan hệ buôn bán với 27 nước.
+Trong giao thông vận tải, đã khôi phục 700 kilômét đường sắt, sửa chữa và làm mới hàng nghìn kilômét đường ô tô, xây dựng lại và mở rộng thêm nhiều bến cảng như : Hải Phòng, Hòn Gai, Cẩm Phả, Bến Thuỷ. Đường hàng không dân dụng quốc tế được khai thông.
+Văn hoá, giáo dục, y tế được đẩy mạnh. Hệ thống giáo dục phổ thông theo chương trình 10 năm đã được khẳng định ; một số trường đại học được thành lập ; hơn 1 triệu người được xoá mù chữ.
+Hệ thống y tế chăm sóc sức khoẻ cho nhân dân được Nhà nước quan tâm xây dựng. Nếp sống lành mạnh, giữ gìn vệ sinh được vận động thực hiện ở khắp mọi nơi.
+Đảng và Nhà nước còn có nhiều chủ trương, biện pháp để củng cố chính quyền dân chủ nhân dân, tăng cường khả năng phòng thủ đất nước, mở rộng mặt trận dân tộc thống nhất và quan hệ ngoại giao với nhiều nước trên thế giới.
+<p style="text-align: center;">
+    <img style="text-align: center; width: 600px; height: 500px;" src="./hinh60.png" alt="Mô tả ảnh"></p>
+        <h2 style="text-align: center; font-size: small;">Hình 60. Thanh niên xung phong tham gia khôi phục  đường sắt Hà Nội – Mục Nam Quan (1957)</h2>
+</p>
+<p class="chuong2-text" id="chuong2_part2">
+<br>2. Cải tạo quan hệ sản xuất, bước đầu phát triển kinh tế – xã hội (1958-1960)
+Trong ba năm (1958 – 1960), miền Bắc lấy cải tạo xã hội chủ nghĩa làm trọng tâm: cải tạo đối với nông nghiệp, thủ công nghiệp, thương nghiệp nhỏ, công thương nghiệp tư bản tư doanh, khâu chính là hợp tác hoá nông nghiệp.
+Thực hiện chủ trương trên, khắp nơi trên miền Bắc sôi nổi phong trào vận động xây dựng hợp tác xã.
+Đến cuối năm 1960, miền Bắc có trên 85% hộ nông dân với 70% ruộng đất vào hợp tác xã nông nghiệp, hơn 87% số thợ thủ công và 45% số người buôn bán nhỏ vào hợp tác xã. Một bộ phận thương nhân được chuyển sang sản xuất hoặc chuyển thành mậu dịch viên.
+Đối với tư sản dân tộc, Đảng và Nhà nước chủ trương cải tạo bằng phương pháp hoà bình, sử dụng mặt tích cực của họ phục vụ cho công cuộc xây dựng đất nước. Đến cuối năm 1960, có hơn 95% số hộ tư sản vào công tư hợp doanh.
+Trong cải tạo, chúng ta mắc một số sai lầm như đã đồng nhất cải tạo với xoá bỏ tư hữu và các thành phần kinh tế cá thể ; thực hiện sai các nguyên tắc xây dựng hợp tác xã là tự nguyện, công bằng, dân chủ, cùng có lợi ; do đó, chưa phát huy được tính tích cực, chủ động, sáng tạo của xã viên trong sản xuất.
+Đồng thời với cải tạo là nhiệm vụ xây dựng, phát triển kinh tế – xã hội, trọng tâm là phát triển thành phần kinh tế quốc doanh. Đến năm 1960, đã có 172 xí nghiệp lớn do trung ương quản lí và trên 500 xí nghiệp do địa phương quản lí.
+Những tiến bộ về mặt kinh tế đã tạo điều kiện cho sự nghiệp văn hoá, giáo dục, y tế phát triển. So với năm 1957, năm 1960, số học sinh tăng 80%, số sinh viên tăng gấp đôi. Các cơ sở y tế năm 1960 tăng 11 lần so với năm 1955.
+– Miền Bắc đã đạt được những thành tựu gì trong công cuộc khôi phục kinh tế, hàn gắn vết thương chiến tranh ?
+– Công cuộc cải tạo quan hệ sản xuất xã hội chủ nghĩa ở miền Bắc từ năm 1958 đến năm 1960 đã đạt được những thành tựu và có hạn chế gì ?
+<br>III – MIỀN NAM ĐẤU TRANH CHỐNG CHẾ ĐỘ MĨ –DIỆM, GIỮ GÌN VÀ PHÁT TRIỂN LỰC LƯỢNG CÁCH MẠNG, TIẾN TỚI “ĐỒNG KHỞI” (1954 – 1960)
+<br>1. Đấu tranh chống chế độ Mĩ – Diệm, giữ gìn và phát triển lực lượng cách mạng (1954 – 1959)
+Cách mạng miền Nam từ giữa năm 1954 chuyển từ đấu tranh vũ trang chống Pháp sang đấu tranh chính trị chống Mĩ – Diệm, đòi thi hành Hiệp định Giơnevơ năm 1954, bảo vệ hoà bình, giữ gìn và phát triển lực lượng cách mạng.
+Cuộc đấu tranh của nhân dân miền Nam vừa đòi Mĩ – Diệm thi hành Hiệp định Giơnevơ, đòi hiệp thương tổng tuyển cử tự do thống nhất đất nước, đòi các quyền tự do, dân sinh, dân chủ, vừa chống khủng bố, đàn áp, chống chiến dịch “tố cộng, diệt cộng”, chống trò hề “trưng cầu dân ý”, “bầu cử quốc hội” của Ngô Đình Diệm.
+Mở đầu là “Phong trào hoà bình” của trí thức và các tầng lớp nhân dân ở Sài Gòn – Chợ Lớn vào tháng 8 – 1954. Trong “Phong trào hoà bình”, nhiều cuộc mít tinh, hội họp và đưa yêu sách đòi chính quyền thi hành nghiêm chỉnh Hiệp định Giơnevơ v.v. được tổ chức.
+Mĩ – Diệm tăng cường khủng bố, đàn áp, lùng bắt những người lãnh đạo phong trào. Tuy vậy, phong trào đấu tranh vì mục tiêu hoà bình của các tầng lớp nhân dân tiếp tục dâng cao, lan rộng tới các thành phố khác và cả vùng nông thôn, mà tiêu biểu là ở Huế và Đà Nẵng. Phong trào đã lôi cuốn mọi tầng lớp nhân dân tham gia, hình thành mặt trận chống Mĩ – Diệm. Phong trào từ đấu tranh chính trị, hoà bình chuyển sang dùng bạo lực, tiến hành đấu tranh chính trị kết hợp với đấu tranh vũ trang, chuẩn bị cho cao trào cách mạng mới.
+<br>2. Phong trào “Đồng khởi” (1959 – 1960)
+Trong những năm 1957 – 1959, cách mạng miền Nam gặp muôn vàn khó khăn, tổn thất. Tháng 5 – 1957, Ngô Đình Diệm ban hành đạo luật đặt cộng sản ngoài vòng pháp luật, ra Luật 10/59, công khai chém giết, làm cho hàng vạn cán bộ, đảng viên bị giết hại, hàng chục vạn đồng bào yêu nước bị tù đày. Cuộc đấu tranh của nhân dân ta ở miền Nam đòi hỏi có một biện pháp quyết liệt để đưa cách mạng vượt qua khó khăn, thử thách.
+<p style="text-align: center;">
+    <img style="text-align: center; width: 600px; height: 500px;" src="./hinh61.png" alt="Mô tả ảnh"></p>
+        <h2 style="text-align: center; font-size: small;">Hình 61. Lược đồ phong trào “Đồng khởi" ở miền Nam</h2>
+    </p>
+    <p class="chuong2-text" id="chuong2_part2">
+	Tháng 1 – 1959, Hội nghị lần thứ 15 Ban Chấp hành Trung ương Đảng đã quyết định để nhân dân miền Nam sử dụng bạo lực cách mạng đánh đổ chính quyền Mĩ – Diệm. Hội nghị nhấn mạnh : Ngoài con đường dùng bạo lực cách mạng, nhân dân miền Nam không có con đường nào khác. Phương hướng cơ bản của cách mạng miền Nam là khởi nghĩa giành chính quyền về tay nhân dân bằng con đường đấu tranh chính trị là chủ yếu, kết hợp với đấu tranh vũ trang đánh đổ ách thống trị của Mĩ – Diệm.
+	Phong trào nổi dậy từ chỗ lẻ tẻ ở từng địa phương như cuộc nổi dậy ở Vĩnh Thạnh (Bình Định), Bác Ái (Ninh Thuận) tháng 2 – 1959, ở Trà Bồng (Quảng Ngãi) tháng 8 – 1959, đã lan ra khắp miền Nam thành cao trào cách mạng, tiêu biểu là cuộc “Đồng khởi” ở Bến Tre.
+	Ngày 17 – 1 – 1960, cuộc “Đồng khởi” nổ ra ở ba xã điểm là Định Thuỷ, Phước Hiệp, Bình Khánh thuộc huyện Mỏ Cày (Bến Tre), rồi nhanh chóng lan ra toàn huyện Mỏ Cày và các huyện Giồng Trôm, Thạnh Phú, Ba Tri, Châu Thành, Bình Đại.
+    <br>Quần chúng nổi dậy giải tán chính quyền địch, thành lập Uỷ ban nhân dân tự quản, thành lập lực lượng vũ trang, tịch thu ruộng đất của địa chủ, cường hào chia cho dân cày nghèo.
+Phong trào “Đồng khởi” lan ra các tỉnh Nam Bộ, Tây Nguyên và Trung Trung Bộ. Tính đến cuối năm 1960, ta đã làm chủ 600/1 298 xã ở Nam Bộ, 904/3 829 thôn ở vùng núi các tỉnh Trung Trung Bộ, 3 200/5 721 thôn ở Tây Nguyên.
+	Phong trào “Đồng khởi” giáng đòn nặng nề vào chính sách thực dân mới của Mĩ, làm lung lay tận gốc chính quyền tay sai Ngô Đình Diệm, đánh dấu bước phát triển của cách mạng miền Nam chuyển từ thế giữ gìn lực lượng sang thế tiến công.
+	Từ trong khí thế đó, Mặt trận Dân tộc giải phóng miền Nam Việt Nam ra đời (20 – 12 – 1960) do Luật sư Nguyễn Hữu Thọ làm Chủ tịch. Mặt trận chủ trương đoàn kết toàn dân, đấu tranh chống đế quốc Mĩ xâm lược và chính quyền Ngô Đình Diệm, thành lập chính quyền cách mạng dưới hình thức những uỷ ban nhân dân tự quản.
+    <p style="text-align: center;">
+        <img style="text-align: center; width: 600px; height: 500px;" src="./hinh62.png" alt="Mô tả ảnh"></p>
+            <h2 style="text-align: center; font-size: small;">Hình 62. Chủ tịch Nguyễn Hữu Thọ duyệt một đơn vị vũ trang giải phóng miền Nam Việt Nam</h2>    
+        </p>
+        <p class="chuong2-text" id="chuong2_part2">
+            <br>– Phong trào đấu tranh chống chế độ Mĩ – Diệm của nhân dân ta ở miền Nam đã diễn ra như thế nào trong những năm đầu sau Hiệp định Giơnevơ năm 1954 ?
+<br>– Phong trào “Đồng khởi” (1959 – 1960) ở miền Nam đã nổ ra trong hoàn cảnh như thế nào ? Nêu diễn biến, kết quả và ý nghĩa của phong trào.
+
+<h2 style="text-align: center;" id="chuong2-topic-2">Chương 2: VIỆT NAM TỪ NĂM 1930 ĐẾN NĂM 1945</h2>
+<p class="chuong2-text" id="chuong2_part2">
+   <p style="text-align: center; font-weight: bold;">Bài 15: VIỆT NAM TRONG NĂM ĐẦU SAU THẮNG LỢI CỦA CUỘC KHÁNG CHIẾN CHỐNG MĨ, CỨU NƯỚC NĂM 1975</p> 
+   <p class="chuong2-text" id="chuong2_part2">
+   Sau thắng lợi của cuộc kháng chiến chống Mĩ, cứu nước năm 1975, nhiệm vụ của cách mạng Việt Nam trong năm đầu là khắc phục hậu quả chiến tranh, khôi phục và phát triển kinh tế – xã hội ở hai miền, hoàn thành thống nhất đất nước về mặt nhà nước.
+    <br>I - TÌNH HÌNH HAI MIỀN BẮC – NAM SAU NĂM 1975
+    <br>Trải qua hơn 20 năm (1954 – 1975) tiến hành cách mạng xã hội chủ nghĩa, miền Bắc đạt được những thành tựu to lớn và toàn diện, đã xây dựng được những cơ sở vật chất – kĩ thuật ban đầu của chủ nghĩa xã hội. Nhưng cuộc chiến tranh phá hoại bằng không quân và hải quân của Mĩ đã tàn phá nặng nề, gây hậu quả lâu dài đối với miền Bắc.
+    “Chiến tranh phá hoại của Mĩ đã phá huỷ hầu hết những cái mà nhân dân ta đã tốn biết bao công sức để xây dựng nên, làm cho quá trình tiến lên sản xuất lớn bị chậm lại đến vài ba kế hoạch 5 năm”. 
+        Miền Nam hoàn toàn giải phóng, chế độ thực dân mới của Mĩ cùng bộ máy chính quyền trung ương Sài Gòn bị sụp đổ, nhưng cơ sở của chính quyền này ở địa phương cùng bao di hại của xã hội cũ vẫn còn tồn tại. Cuộc chiến tranh của Mĩ đã gây ra hậu quả nặng nề. Nhiều làng mạc, đồng ruộng bị tàn phá. Nửa triệu hécta ruộng đất bị bỏ hoang. Một triệu hécta rừng bị chất độc hoá học và bom đạn cày xới. Vô số bom mìn còn bị vùi lấp trên các cánh đồng, ruộng vườn và nơi cư trú của nhân dân. Đội ngũ thất nghiệp lên tới hàng triệu người. Số người mù chữ chiếm tỉ lệ lớn trong dân cư.
+        Miền Nam có nền kinh tế trong chừng mực nhất định phát triển theo hướng tư bản chủ nghĩa, song về cơ bản vẫn mang tính chất của kinh tế nông nghiệp, sản xuất nhỏ và phân tán, phát triển không cân đối, lệ thuộc nặng nề vào viện trợ từ bên ngoài.
+        <br>- Sau thắng lợi của cuộc kháng chiến chống Mĩ, cứu nước, cách mạng ở hai miền Bắc – Nam có thuận lợi và khó khăn gì ?
+        <br>II – KHẮC PHỤC HẬU QUẢ CHIẾN TRANH, KHÔI PHỤC VÀ PHÁT TRIỂN KINH TẾ – XÃ HỘI Ở HAI MIỀN ĐẤT NƯỚC
+        <br> Ở miền Bắc, cuộc chiến tranh phá hoại của Mĩ đã chấm dứt sau Hiệp định Pari năm 1973 về Việt Nam, nhưng do bị tàn phá nặng nề nên đến giữa năm 1976, mới căn bản hoàn thành nhiệm vụ khắc phục hậu quả chiến tranh, khôi phục kinh tế.
+        <br>Trong việc thực hiện kế hoạch Nhà nước 6 tháng cuối năm 1975 và 6 tháng đầu năm 1976, miền Bắc có những tiến bộ đáng kể. Diện tích trồng lúa, hoa màu, cây công nghiệp năm 1976 đều tăng hơn năm 1975. Nhiều công trình, nhà máy được mở rộng và xây dựng mới. Sản lượng phần lớn các sản phẩm quan trọng đều đạt và vượt mức trước chiến tranh. Sự nghiệp văn hoá, giáo dục, y tế phát triển mạnh.
+        Miền Bắc còn làm nghĩa vụ của căn cứ địa cách mạng cả nước và nghĩa vụ quốc tế đối với Lào, Campuchia trong thời kì mới.
+        Ở miền Nam, công việc tiếp quản vùng mới giải phóng từ thành thị đến nông thôn, từ đất liền đến hải đảo, từ căn cứ quân sự đến các cơ sở sản xuất, hành chính, văn hoá được tiến hành khẩn trương.
+        Ở những vùng mới giải phóng, việc thành lập chính quyền cách mạng và đoàn thể quần chúng các cấp nhanh chóng được thực hiện. Tại các thành phố lớn như Sài Gòn, Huế, Đà Nẵng v.v., chính quyền cách mạng tuyên bố thành lập ngay sau khi được giải phóng.
+        Với sự hướng dẫn và giúp đỡ của Nhà nước, hàng triệu đồng bào ta, trong thời gian chiến tranh bị dồn vào các “ấp chiến lược” hay bỏ chạy vào các thành phố, không có việc làm, được hồi hương, chuyển về nông thôn tham gia sản xuất hoặc đi xây dựng vùng kinh tế mới.
+        Chính quyền cách mạng tịch thu toàn bộ tài sản và ruộng đất của bọn phản động trốn ra nước ngoài, tuyên bố xoá bỏ quan hệ bóc lột phong kiến, tiến hành điều chỉnh ruộng đất trong nội bộ nông dân, quốc hữu hoá ngân hàng, thay đồng tiền cũ bằng đồng tiền mới của cách mạng.
+        Chính quyền cách mạng chú trọng khôi phục sản xuất nông nghiệp để đáp ứng nhu cầu cấp bách và lâu dài của nhân dân về lương thực. Các cơ sở sản xuất công nghiệp, thủ công nghiệp và thương nghiệp, cả những cơ sở bị gián đoạn quan hệ với nước ngoài, đều trở lại hoạt động.
+        Các hoạt động văn hoá, giáo dục, y tế v.v. được tiến hành khẩn trương từ những ngày đầu mới giải phóng.
+        <br> - Nêu những thành tựu đạt được trong việc khắc phục hậu quả chiến tranh, khôi phục kinh tế, ổn định tình hình miền Nam sau giải phóng năm 1975.
+        <br>III – HOÀN THÀNH THỐNG NHẤT ĐẤT NƯỚC VỀ MẶT NHÀ NƯỚC (1975– 1976)
+        <br> Sau đại thắng mùa Xuân 1975, Tổ quốc Việt Nam được thống nhất về mặt lãnh thổ, song ở mỗi miền vẫn tồn tại hình thức tổ chức nhà nước khác nhau. Thực tế đó trái với nguyện vọng, tình cảm thiêng liêng của nhân dân hai miền Bắc – Nam là sớm được sum họp trong một đại gia đình, mong muốn có một chính phủ thống nhất, một cơ quan đại diện quyền lực chung cho nhân dân cả nước.
+        <br>Đáp lại nguyện vọng chính đáng của nhân dân cả nước, đồng thời cũng phù hợp với thực tế lịch sử dân tộc – “Nước Việt Nam là một, dân tộc Việt Nam là một” – Hội nghị lần thứ 24 Ban Chấp hành Trung ương Đảng (9 – 1975) đề ra nhiệm vụ hoàn thành thống nhất đất nước về mặt nhà nước.
+        <br>Nghị quyết của Đảng nêu rõ : “Thống nhất đất nước vừa là nguyện vọng tha thiết của nhân dân cả nước, vừa là quy luật khách quan của sự phát triển cách mạng Việt Nam, của lịch sử dân tộc Việt Nam”.
+        Từ ngày 15 đến ngày 21 – 11 – 1975, Hội nghị Hiệp thương chính trị thống nhất đất nước được tổ chức tại Sài Gòn. Hai đoàn đại biểu đại diện cho hai miền tham dự. Hội nghị nhất trí hoàn toàn các vấn đề về chủ trương, biện pháp nhằm thống nhất đất nước về mặt nhà nước.
+        Ngày 25 – 4 – 1976, cuộc Tổng tuyển cử bầu Quốc hội chung được tiến hành trong cả nước. Hơn 23 triệu cử tri (chiếm 98,8% tổng số cử tri) đi bỏ phiếu và bầu ra 492 đại biểu.
+        <p style="text-align: center;">
+            <img style="text-align: center; width: 600px; height: 500px;" src="./hinh84.png" alt="Mô tả ảnh"></p>
+                <h2 style="text-align: center; font-size: small;">Hình 63. Nhân dân thành phố Huế bỏ phiếu bầu đại biểu Quốc hội khoá VI</h2>    
+    
+                <p class="chuong2-text" id="chuong2_part2">
+    <br>Từ ngày 24 – 6 đến ngày 3 – 7 – 1976, Quốc hội khoá VI nước Việt Nam thống nhất họp kì đầu tiên tại Hà Nội.
+        Quốc hội thông qua chính sách đối nội và đối ngoại của Nhà nước Việt Nam thống nhất, quyết định tên nước là Cộng hoà xã hội chủ nghĩa Việt Nam (từ ngày 2 – 7 – 1976), quyết định Quốc huy mang dòng chữ Cộng hoà xã hội chủ nghĩa Việt Nam, Quốc kì là lá cờ đỏ sao vàng, Quốc ca là bài Tiến quân ca, thủ đô là Hà Nội, thành phố Sài Gòn – Gia Định được đổi tên là Thành phố Hồ Chí Minh.
+        Quốc hội bầu các cơ quan, chức vụ lãnh đạo cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam, bầu Ban dự thảo Hiến pháp.
+    Ở địa phương, Quốc hội quyết định tổ chức thành ba cấp chính quyền : cấp tỉnh và thành phố trực thuộc Trung ương, cấp huyện và tương đương, cấp xã và tương đương. Ở mỗi cấp chính quyền có Hội đồng nhân dân và Uỷ ban nhân dân.
+        Với kết quả của kì họp thứ nhất Quốc hội khoá VI, công việc thống nhất đất nước về mặt nhà nước đã hoàn thành. Từ đây, việc tiếp tục hoàn thành thống nhất trên tất cả các lĩnh vực chính trị, tư tưởng, kinh tế, văn hoá, xã hội sẽ gắn liền với việc thực hiện những nhiệm vụ của cách mạng xã hội chủ nghĩa trong phạm vi cả nước.
+        Hoàn thành thống nhất đất nước về mặt nhà nước đã tạo nên những điều kiện chính trị cơ bản để phát huy sức mạnh toàn diện của đất nước, những điều kiện thuận lợi để cả nước đi lên chủ nghĩa xã hội, những khả năng to lớn để bảo vệ Tổ quốc và mở rộng quan hệ với các nước trên thế giới.
+        Nước Cộng hoà xã hội chủ nghĩa Việt Nam vừa thành lập đã có 94 nước chính thức công nhận và đặt quan hệ ngoại giao. Ngày 20 – 9 – 1977, nước ta trở thành thành viên thứ 149 của Liên hợp quốc.
+    
+                        </p>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <a href="chuong1.html">
+                <div class="back-page">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAWpJREFUaEPtmD8yRTEUh7/HYtiFTdCgMEaj02joaTQaDRoaKmuwDPZicIqYTOY9Mzk5OZFxXn2TfL8/ucl9Cyb/LSbnJwSMTjASiAQaHYgKNRrYPDwSaLawcYJ/ncBnYZ7WjC3gVRuEdlFZz0LAIXAPXADnGhEjBQj8Hfzcx06A61oRowQcAbdLYDeBtxoRIwSUzqc6HgAPNfDyrLcAU3hvAXvAY2GavAhUzqekvBIQeKnHWlYRgd8Fnmprkz/vIaAbvEeFlsF/APutzntUaBt4Lmoj8DvAS0ttPCok8NLt9Wwxc/ieFZpegJgzdYVSc6bexL+JMDkDeu6B8iXT7SzwOMjyJKa9SiQRU1/muojwrFC+L1Z90Gx8X/Dea07pUQKEMX0PJ95T4KoG3vMttIrrGLgBLoGzWvi/IEAYhv2tojHMfEzLHjCH0UwYAjSuWY6JBCzd1MwVCWhcsxwTCVi6qZkrEtC4ZjnmCz43VjGWhm+7AAAAAElFTkSuQmCC"/>
+                </div>
+            </a>
+            <a href="chuong2.html">
+                <div class="skip-page">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAVpJREFUaEPtmDFOxEAMRd+K08AhEFegggYaoKWhgn5paGi3WEQBNOwhEHeA2wArS4kE0URK7JHsEU4ZxZP//h9nZrKg8WvRuH4SwDvBTCATMDqQU8hooLk8EzBbaBzg3ydwALwpTfwZ1KnMVBV1L74DroBz4EEB4QpwDdx2okWIBsINYBf4LDguEOsZSbgBiMYLYAV/drMi6AR4ngjhCiAaT4HHAcR3d38KhDuAFSIEgAUiDIBAHAMvhel0BGxGeiIUwBjEVwdXgggHMBciJEAP8QTs/Jo6pSTCAhwCr60CSDNPcV/CCZfA3C9RKIAx8bJaj63KYQC0W4oQAFrxIXrAIt4doOnt9B7wUdjfnM08Wrr2wA2wbPVI2Zt/D1wqz8PuPdBD7APvE4+Qw8dcp5BSc/0yy3+h+moUIyaAwrSqJZlAVTsVg2UCCtOqlmQCVe1UDJYJKEyrWrIFYedYMZ4gYS0AAAAASUVORK5CYII="/>
+                </div>
+            </a>
+            <a href="#top">
+                <div class="top">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAWtJREFUaEPtmM1NA0EMhb9w404JFAFXOkCiD6ASoI9I6YArFEEJ3LkBetJEQVGyO/4ZhZXsa8az77Pf2FJWLDxWC9dPAZy6g9WBJXTg58QiJ13SY6ECCHawOhAs4Nj0njcwVkHw9gIIFjCcProDD03hc1jpkQtGAtwC6/bdO2AzAmIUwBXwCpw30V/ADfCeDTEC4BJ4Ay72xH4C18BHJkQ2gERLvCAOhcQLQjApkQkgu8g2ss9UyEayk2wVjiyAs/Zg9XB7Qg9aD/u75/DUmSwAjcl7o5gXYDtmjam74xkAEvHkVPAIhHZEFGA762UhT8hCoR0RAdif9R4A5YR2hBfg2Kz3Qrh3hAdgbtZ7IVw7wgrQO+u9EOYdYQGwznovhGlHWAA8s94L0b0jLABzYqx/v6R8O+WSRlYAcy0+9Ht14E9VykJlIU8FykLBqtUUKgv9IwsFpfjSM9+AT0EwqwCCBQynVwfCJQxe8Au7Uzox5GUPtgAAAABJRU5ErkJggg=="/>
+                </div>
+            </a>
+            </div>
+            
+            <!-- right-side -->
+        </div>
+    </div>
+
+    <!-- java -->
+
+ <!-- Audio background -->
+ <audio id="audio" src="./sound/chương 2.MP3" autoplay loop></audio>
+
+ <!-- Video element -->
+ <video id="video" controls width="600">
+     <source src="./video/video1.mp4" type="video/mp4">
+ </video>
+
+ <script>
+     // Get the audio and video elements
+     const backgroundAudio = document.getElementById('audio');
+     const video = document.getElementById('video');
+
+     // Add event listener to pause the audio when video starts playing
+     video.addEventListener('play', function() {
+         backgroundAudio.pause();
+     });
+
+     // Optionally, resume the audio when the video is paused or ends
+     video.addEventListener('pause', function() {
+         backgroundAudio.play();
+     });
+
+     video.addEventListener('ended', function() {
+         backgroundAudio.play();
+     });
+ </script>
+
+    <script type="module">
+        var playBtn = document.getElementById("playBtn");
+
+
+        import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+        
+        const wavesurfer = WaveSurfer.create({
+          container: '#waveform',
+          waveColor: '#ddd',
+          progressColor: '#fff',
+          height: '20px',
+          barWidth: 4,
+          height: '30px',
+          responsive: true,
+          barRadius: 4,
+          url: 'sound/chương 2.MP3',
+        })
+        
+        wavesurfer.on('interaction', () => {
+          wavesurfer.play()
+        })
+
+        playBtn.onclick = function(){
+            wavesurfer.playPause();
+            if(playBtn.src.includes("play.png")){
+                playBtn.src = "img/pause.png";
+            }else{
+                playBtn.src = "img/play.png"
+            }
+        }
+
+        wavesurfer.on('finish', function(){
+            playBtn.src = "img/play.png";
+            wavesurfer.stop();
+        })
+        </script>
+
+<script>
+    let soundBar = document.getElementById("soundBar");
+
+    function toggleSound(){
+        soundBar.classList.toggle("open-bar");
+    }
+</script>
+
+<script>
+    let themeMenu = document.getElementById("themeMenu");
+
+    function toggleMenu(){
+        themeMenu.classList.toggle("cong-cu");
+    }
+</script>
+
+<script>
+    function changFontSize(type){
+        // doi id
+        let ids = ["#chuong1_part1","#chuong1-1","#chuong1-2","#chuong1-3","#chuong1-4","#chuong1-5","#chuong1-6","#chuong1-7","#chuong1-8"];
+
+        ids.forEach(id => {
+            //get element
+            let el = document.querySelector(id);
+
+            //get font size
+            let fontSize = window.getComputedStyle(el, null).getPropertyValue("font-size")
+
+            //conver to float
+            fontSize = parseFloat(fontSize);
+
+            //change
+            if(type === "increase"){
+                el.style.fontSize = (fontSize + 5) + "px"
+            }else{
+                el.style.fontSize = (fontSize - 5) + "px";
+            }
+        });
+    }
+</script>
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "img/moon.png";
+        }else{
+            icon.src = "img/sun.png";
+        }
+    }
+</script>
+
+
+<script src="index.js"></script>
+<script>
+    function changeStyle() {
+    var fonts = ["Arial", "Times New Roman"];
+    var selectedFont = prompt("Đổi phông chữ:\n1. Arial\n2. Times New Roman\n");
+
+    if (selectedFont >= 1 && selectedFont <= fonts.length) {
+        document.body.style.fontFamily = fonts[selectedFont - 1];
+    } else {
+        alert("Lựa chọn không hợp lệ!");
+    }
+}
+</script>
+<script>
+    // JavaScript để highlight từ được chọn
+    function highlightSelection(chuong2_part2Id) {
+        // Lấy từ được chọn bởi người dùng
+        const selection = window.getSelection();
+        const range = selection.getRangeAt(0);
+        const selectedText = range.toString();
+
+        // Nếu có từ được chọn
+        if (selectedText) {
+            // Tạo một span với lớp 'highlighted'
+            const span = document.createElement('span');
+            span.className = 'highlighted';
+            span.textContent = selectedText;
+
+            // Thay thế từ được chọn bằng span highlight
+            range.deleteContents();
+            range.insertNode(span);
+        }
+    }
+
+    // JavaScript để xóa tất cả highlight
+    function removeAllHighlights(chuong2_part2Id) {
+        // Lấy nội dung văn bản theo ID
+        const content = document.getElementById(chuong2_part2Id);
+
+        // Sử dụng innerHTML để thay thế tất cả các span với nội dung text của nó
+        content.innerHTML = content.innerHTML.replace(/<span class="highlighted">(.*?)<\/span>/g, '$1');
+    }
+</script>
+</body>
+</html>
